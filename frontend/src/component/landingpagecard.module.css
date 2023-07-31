@@ -1,0 +1,10 @@
+
+
+
+.landingCard  {
+    transition: transform 0.3s ease;
+}
+
+.landingCard:hover {
+  transform: scale(1.1);
+}
