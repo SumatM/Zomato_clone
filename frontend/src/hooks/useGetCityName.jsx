@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const useGetCityName = () => {
+const useCurrentLocation = () => {
   const [location, setLocation] = useState({
     latitude: null,
     longitude: null,
     placeName: null,
     error: null,
-    loading: true,
   });
 
   useEffect(() => {
@@ -16,50 +16,44 @@ const useGetCityName = () => {
           const { latitude, longitude } = position.coords;
 
           const apiKey = import.meta.env.VITE_MAPAPI;
-          const geocodingApiUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
+          const geocodingApiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`;
 
-          fetch(geocodingApiUrl)
-            .then((response) => response.json())
-            .then((data) => {
-              console.log(data);
-              if (data.results.length > 0) {
-                const placeName = data.results[0].formatted_address;
+          axios
+            .get(geocodingApiUrl)
+            .then((response) => {
+              if (response.data.results.length > 0) {
+                const placeName = response.data.results[0].formatted;
                 setLocation({
                   latitude,
                   longitude,
                   placeName,
                   error: null,
-                  loading: false,
                 });
               } else {
                 setLocation((prevState) => ({
                   ...prevState,
-                  error: "No Place found.",
-                  loading: false,
+                  error: "No results found.",
                 }));
               }
             })
             .catch((error) => {
               setLocation((prevState) => ({
                 ...prevState,
-                error: error.message,
-                loading: false,
+                error:  error.message,
               }));
             });
         },
         (error) => {
           setLocation((prevState) => ({
             ...prevState,
-            error: error.message,
-            loading: false,
+            error:  error.message,
           }));
         }
       );
     } else {
       setLocation((prevState) => ({
         ...prevState,
-        error: "Geolocation is not available in this browser.",
-        loading: false,
+        error: "Geolocation is not available in this system.",
       }));
     }
   }, []);
@@ -67,4 +61,4 @@ const useGetCityName = () => {
   return location;
 };
 
-export default useGetCityName;
+export default useCurrentLocation;
