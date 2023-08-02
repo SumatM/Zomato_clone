@@ -1,0 +1,34 @@
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.footerSections > p{
+    line-height: 1.3rem;
+}
+
+
+.footerSection3{
+    margin-top: 1rem;
+}
+
+
+.socialIcons{
+    color: black;
+    font-size: large;
+    margin-top: 0.5rem;
+}
+
+.socialIcons>div{
+    padding: 0 0.1rem;
+
+}
+
+.socialIcons>div:hover{
+    cursor: pointer;
+}
+
+.downloadOption>div{
+    margin-top: 10px;
+}
