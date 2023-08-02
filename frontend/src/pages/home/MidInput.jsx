@@ -33,6 +33,8 @@ export const MidInput = () => {
           letterSpacing="0.2rem"
           fontSize={"4rem"}
           fontFamily={"REM"}
+          fontWeight='bolder'
+          
         >
           AROMA
         </Text>
@@ -50,6 +52,7 @@ export const MidInput = () => {
         p="0.5rem"
         borderRadius="8px"
         w='55vw'
+        mt='10px'
       >
         {/* input location box  */}
         <Box display="flex" alignItems="center">
@@ -68,7 +71,7 @@ export const MidInput = () => {
             size="xs"
             border="none"
             outline="none"
-            placeholder=" Search for restaurant,cuisine or a dish"
+            placeholder=" Search for restaurant, cuisine or a dish"
             p="0.5rem"
             fontSize="0.7rem"
             letterSpacing="0.1rem"
