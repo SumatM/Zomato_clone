@@ -4,7 +4,7 @@ import { FooterBox2 } from "./FooterBox2";
 
 export const Footer = () => {
   return (
-    <Box bg="#F8F8F8">
+    <Box bg="#F8F8F8" p='1rem'>
       {/* box 1 */}
       <ZomatoBox1 />
       {/* box 2 */}
@@ -20,7 +20,7 @@ export const Footer = () => {
         <Text>
           By continuing past this page, you agree to our Terms of Service,
           Cookie Policy, Privacy Policy and Content Policies. All trademarks are
-          properties of their respective owners. 2008-2023 © Zomato™ Ltd. All
+          properties of their respective owners. 2008-2023 © Aroma™ Ltd. All
           rights reserved.
         </Text>
       </Box>

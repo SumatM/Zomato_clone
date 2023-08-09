@@ -52,7 +52,7 @@ export const MidInput = () => {
         p="0.5rem"
         borderRadius="8px"
         w='55vw'
-        mt='10px'
+        mt='1.5rem'
       >
         {/* input location box  */}
         <Box display="flex" alignItems="center">

@@ -3,11 +3,11 @@ import {TbDeviceMobile} from 'react-icons/tb'
 
 const HomveNav = () => {
   return (
-    <Box color="white" p='0.6rem 4rem' width='100%' fontSize='0.8rem'>
+    <Box color="white" p='0.6rem 4rem' width='100%' fontSize='1.1rem'>
     <Box display={'flex'}  justifyContent="space-between" alignContent='center'>
       <Box display={'flex'} alignItems='center' _hover={{cursor:'pointer'}}>
       <Box>
-      <TbDeviceMobile size="10px"/>
+      <TbDeviceMobile size="20px"/>
       </Box>
         <Box>
         <Text >Get th App</Text>

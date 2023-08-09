@@ -5,6 +5,7 @@ import { MidInput } from "./MidInput";
 import { landingCard } from "../../utils/landingPageCards";
 import { LandingPageCards } from "../../component/LandingPageCards";
 import { HomeFooter } from "./Footer/HomeFooter";
+import { Collections } from "./Collections";
 
 const Home = () => {
   return (
@@ -17,8 +18,8 @@ const Home = () => {
       <HomveNav />
       {/* mid input  */}
       <MidInput />
-      {/* cards  */}
-      <Box p="15px" w="90vw">
+      {/* part 2  */}
+      <Box p="15px" maxW="90vw" m='auto' mt='5rem'>
         <Box
           display={"grid"}
           gridTemplateColumns={"repeat(3,1fr)"}
@@ -29,10 +30,11 @@ const Home = () => {
             return <LandingPageCards key={ind} {...item} />;
           })}
         </Box>
-
-        {/* footer  */}
-        <HomeFooter />
+        <Collections/>
+      {/* footer  */}
+      <HomeFooter />
       </Box>
+ 
     </Box>
   );
 };

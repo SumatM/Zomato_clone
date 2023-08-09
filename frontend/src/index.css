@@ -1,10 +1,17 @@
  @import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=REM&display=swap');
 
+ @font-face {
+  font-family: 'Okra';
+  src: url('../src/assets//fonts/DTCOkraSans1.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 
 :root {
-  font-family: 'Martel Sans', sans-serif;
+  font-family: Okra;
+  /* font-family: 'Martel Sans', sans-serif; */
   /* font-family: 'REM', sans-serif; */
 }
 

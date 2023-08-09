@@ -3,8 +3,8 @@ import styles from './landingpagecard.module.css'
 
 export const LandingPageCards = ({img,heading,line}) => {
   return (
-    <Box className={styles.landingCard}>
-      <Box borderRadius='10px' border='1px solid #616A6B' h='40vh'   overflow='hidden'>
+    <Box className={styles.landingCard} >
+      <Box borderRadius='10px' border='1px solid #616A6B' h='40vh'   overflow='hidden'background={"white"}>
         <Box h='60%'  >
             <Image w='100%' h='100%' align={'center'} fit='cover' src={img} alt="" loading="lazy"/>
         </Box>

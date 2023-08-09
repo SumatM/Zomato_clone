@@ -6,7 +6,7 @@ export const HomeFootertop = () => {
 
   function isChecked(e) {
     const { checked, name } = e.target;
-    if (checked & (name == "email")) {
+    if (name == "email") {
       setPlaceholderValue("Email");
     } else {
       setPlaceholderValue("Phone");
@@ -15,7 +15,7 @@ export const HomeFootertop = () => {
 
   return (
     <Box display="flex" mt="5rem" justifyContent="center" bg="#F8F8F8" p="2rem">
-      <Box w="20vw" textAlign="right">
+      <Box w="25vw" textAlign="right">
         <Image
           src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png"
           alt="getApp"
@@ -23,14 +23,14 @@ export const HomeFootertop = () => {
       </Box>
       <Box>
         <Box>
-          <Heading size="lg" fontWeight="medium">
-            Get the Zomato app
+          <Heading size="xl" fontWeight="medium">
+            Get the Aroma app
           </Heading>
-          <Text mt="1.2rem" fontWeight="light" fontSize="0.8rem">
+          <Text mt="1.2rem" fontWeight="light" fontSize="1.1rem">
             We will send you a link, open it on your phone to download the app
           </Text>
         </Box>
-        <Box display="flex" mt="1rem" p="10px" fontSize={"0.8rem"}>
+        <Box display="flex" mt="1rem" p="10px" fontSize="1.1rem">
           <Box display="flex" alignItems="center">
             <input
               type="checkbox"
@@ -57,13 +57,14 @@ export const HomeFootertop = () => {
             type="text"
             placeholder={placeholderValue}
             size="medium"
-            fontSize={"0.8rem"}
+            fontSize="1.1rem"
             p={"0.4rem"}
           />
           <Button
             ml="25px"
+            padding='1.3rem'
             colorScheme="red"
-            fontSize="0.8rem"
+            fontSize="1.1rem"
             fontWeight={"light"}
             size="sm"
           >

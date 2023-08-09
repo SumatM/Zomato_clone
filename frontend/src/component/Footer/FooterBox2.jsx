@@ -12,10 +12,10 @@ export const FooterBox2 = () => {
   return (
     <Box mt="25px">
       <Grid className={styles.container}>
-        {/* about zomato  */}
+        {/* about Aroma  */}
         <Box className={styles.footerSections} fontSize="0.7rem" color="gray">
           <Text letterSpacing="1px" fontWeight="500" color="black">
-            ABOUT ZOMATO
+            ABOUT AROMA
           </Text>
           <Text _hover={{ cursor: "pointer" }}>Who We Are</Text>
           <Text _hover={{ cursor: "pointer" }}>Blog</Text>
@@ -27,9 +27,9 @@ export const FooterBox2 = () => {
         {/* zomaverse  */}
         <Box className={styles.footerSections} fontSize="0.7rem" color="gray">
           <Text fontWeight="500" letterSpacing="1px" color="black">
-            ZOMVERSE
+            AROMVERSE
           </Text>
-          <Text _hover={{ cursor: "pointer" }}>Zomato</Text>
+          <Text _hover={{ cursor: "pointer" }}>Aroma</Text>
           <Text _hover={{ cursor: "pointer" }}>Blinkit</Text>
           <Text _hover={{ cursor: "pointer" }}>Feeding India</Text>
           <Text _hover={{ cursor: "pointer" }}>Hyperpure</Text>
@@ -50,7 +50,7 @@ export const FooterBox2 = () => {
           >
             FOR ENTERPRISES
           </Text>
-          <Text _hover={{ cursor: "pointer" }}>Zomato For Enterprise</Text>
+          <Text _hover={{ cursor: "pointer" }}>Aroma For Enterprise</Text>
         </Box>
         {/* learn more  */}
 
