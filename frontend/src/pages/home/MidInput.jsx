@@ -51,7 +51,7 @@ export const MidInput = () => {
         bg="white"
         p="0.5rem"
         borderRadius="8px"
-        w='55vw'
+        w={{base:'95vw',sm:'85vw',md:'55vw'}}
         mt='1.5rem'
       >
         {/* input location box  */}
@@ -60,7 +60,7 @@ export const MidInput = () => {
             <MdLocationPin color="#FF7E8B" />
           </Box>
           {/* input box  */}
-          <InputBox />
+          <InputBox/>
         </Box>
 
         <Box bg="white" display="flex" ml="1rem" w='55vw'>

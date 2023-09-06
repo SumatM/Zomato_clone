@@ -15,18 +15,18 @@ export const Collections = () => {
           <Box display='flex' justifyContent={'space-between'}  mt='20px' fontSize='1.1rem'>
             <Text>
               Explore curated lists of top restaurants, cafes, pubs, and bars in
-              {currPlace}, based on trends
+              {currPlace || 'Your Place'}, based on trends
             </Text>
             <Box display='flex' alignItems={'center'} color={'red'}>
             <Text mr='5px' _hover={{cursor:'pointer'}}>
-                All Collection in {currPlace} 
+                All Collection in {currPlace || 'Your Place'} 
             </Text>
             <BiSolidRightArrow/>
             </Box>
           </Box>
         </Box>
         {/* box 2  */}
-        <Box display={'grid'} gridTemplateColumns={'repeat(4,1fr)'} gridGap='2rem' mt='2rem'>
+        <Box display={'grid'}  gridTemplateColumns={{base:"repeat(1,1fr)",sm:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)"}} gridGap='2rem' mt='2rem'>
             {landingCollection?.map((item)=>{
                 return <LandingCollectionCard {...item}/>
             })}

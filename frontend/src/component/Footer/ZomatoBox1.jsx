@@ -6,6 +6,7 @@ export const ZomatoBox1 = () => {
   return (
     <Box
       display="flex"
+      flexDir={{ base: "column", sm: "row" }}
       justifyContent="space-between"
       mt="25px"
       alignItems="center"
@@ -23,7 +24,12 @@ export const ZomatoBox1 = () => {
         </Text>
       </Box>
 
-      <Box display="flex" alignItems={"center"}>
+      <Box
+        display="flex"
+        alignItems={"center"}
+        mt={{ base: "1rem", sm: "0" }}
+        p={{ base: "10px", sm: "0" }}
+      >
         <Box
           display="flex"
           bg="white"

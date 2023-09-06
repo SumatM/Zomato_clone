@@ -1,8 +1,5 @@
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
+
 
 .footerSections > p{
     line-height: 1.3rem;
@@ -32,3 +29,13 @@
 .downloadOption>div{
     margin-top: 10px;
 }
+
+
+@media screen and (max-width: 480px) {
+    .socialIcons{
+        color: black;
+        font-size: x-large;
+        margin-top: 1rem;
+    }
+  }
+  

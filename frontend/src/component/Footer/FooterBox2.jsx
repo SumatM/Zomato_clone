@@ -11,9 +11,9 @@ import {
 export const FooterBox2 = () => {
   return (
     <Box mt="25px">
-      <Grid className={styles.container}>
+      <Grid gridTemplateColumns={{base:'repeat(2,1fr)',sm:'repeat(3,1fr)',md:'repeat(5,1fr)'}} >
         {/* about Aroma  */}
-        <Box className={styles.footerSections} fontSize="0.7rem" color="gray">
+        <Box className={styles.footerSections} fontSize="0.7rem" color="gray" mt={{base:'1rem',sm:'1rem',md:'0rem'}}>
           <Text letterSpacing="1px" fontWeight="500" color="black">
             ABOUT AROMA
           </Text>
@@ -25,7 +25,7 @@ export const FooterBox2 = () => {
           <Text _hover={{ cursor: "pointer" }}>Contact Us</Text>
         </Box>
         {/* zomaverse  */}
-        <Box className={styles.footerSections} fontSize="0.7rem" color="gray">
+        <Box className={styles.footerSections} fontSize="0.7rem" color="gray" mt={{base:'1rem',sm:'1rem',md:'0rem'}}>
           <Text fontWeight="500" letterSpacing="1px" color="black">
             AROMVERSE
           </Text>
@@ -36,7 +36,7 @@ export const FooterBox2 = () => {
           <Text _hover={{ cursor: "pointer" }}>Zomaland</Text>
         </Box>
         {/* for restaurant and enterprises  */}
-        <Box className={styles.footerSections} fontSize="0.7rem" color="gray">
+        <Box className={styles.footerSections} fontSize="0.7rem" color="gray" mt={{base:'1rem',sm:'1rem',md:'0rem'}}>
           <Text fontWeight="500" letterSpacing="1px" color="black">
             FOR RESTAURANTS
           </Text>
@@ -54,7 +54,7 @@ export const FooterBox2 = () => {
         </Box>
         {/* learn more  */}
 
-        <Box className={styles.footerSections} fontSize="0.7rem" color="gray">
+        <Box className={styles.footerSections} fontSize="0.7rem" color="gray" mt={{base:'1rem',sm:'1rem',md:'0rem'}}>
           <Text fontWeight="500" letterSpacing="1px" color="black">
             LEARN MORE
           </Text>
@@ -65,7 +65,7 @@ export const FooterBox2 = () => {
         </Box>
         {/* social links  */}
 
-        <Box className={styles.footerSections} fontSize="0.7rem" color="gray">
+        <Box className={styles.footerSections} fontSize="0.7rem" color="gray" mt={{base:'1rem',sm:'1rem',md:'0rem'}}>
           <Text fontWeight="500" letterSpacing="1px" color="black">
             LEARN MORE
           </Text>
@@ -93,14 +93,14 @@ export const FooterBox2 = () => {
           </Box>
           <Box className={styles.downloadOption}>
             {/* app store  */}
-            <Box w="10vw" _hover={{ cursor: "pointer" }}>
+            <Box w={{base:'20vw',sm:"12vw",md:'10vw'}} _hover={{ cursor: "pointer" }}>
               <Image
                 src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
                 alt="appStore"
               />
             </Box>
             {/* playStore */}
-            <Box w="10vw" _hover={{ cursor: "pointer" }}>
+            <Box w={{base:'20vw',sm:"12vw",md:'10vw'}}  _hover={{ cursor: "pointer" }}>
               <Image
                 src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
                 alt="playStore"

@@ -4,7 +4,7 @@ import { FooterBox2 } from "./FooterBox2";
 
 export const Footer = () => {
   return (
-    <Box bg="#F8F8F8" p='1rem'>
+    <Box bg="#F8F8F8" p='1rem' >
       {/* box 1 */}
       <ZomatoBox1 />
       {/* box 2 */}

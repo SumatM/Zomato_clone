@@ -14,8 +14,8 @@ export const HomeFootertop = () => {
   }
 
   return (
-    <Box display="flex" mt="5rem" justifyContent="center" bg="#F8F8F8" p="2rem">
-      <Box w="25vw" textAlign="right">
+    <Box display="flex" flexDir={{base:'column',md:'row'}} mt="5rem" justifyContent="center"  bg="#F8F8F8"  p="2rem">
+      <Box w={{base:'70vw',sm:'50vw',md:'25vw'}} textAlign="center"  m='auto'>
         <Image
           src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png"
           alt="getApp"
@@ -50,10 +50,10 @@ export const HomeFootertop = () => {
             <Text p="0 5px">Phone</Text>
           </Box>
         </Box>
-        <Box display="flex" alignItems={"center"}>
+        <Box display="flex" alignItems={"center"} >
           <Input
             border="1px solid gray"
-            w="20vw"
+            w={{base:"100vw",sm:'80vw',md:"20vw"}}
             type="text"
             placeholder={placeholderValue}
             size="medium"
@@ -61,12 +61,13 @@ export const HomeFootertop = () => {
             p={"0.4rem"}
           />
           <Button
-            ml="25px"
+            ml="1rem"
             padding='1.3rem'
             colorScheme="red"
-            fontSize="1.1rem"
+            fontSize={{base:'70%',md:"1.1rem"}}
             fontWeight={"light"}
             size="sm"
+            w={{base:'60vw',sm:"60vw",md:"auto"}}
           >
             Share App Link
           </Button>
@@ -76,13 +77,13 @@ export const HomeFootertop = () => {
             Download app from{" "}
           </Text>
           <Box mt="1.2rem" display={"flex"}>
-            <Box w="10vw" _hover={{ cursor: "pointer" }}>
+            <Box w={{base:'30vw',sm:"20vw",md:'10vw'}} _hover={{ cursor: "pointer" }}>
               <Image
                 src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
                 alt="appStore"
               />
             </Box>
-            <Box _hover={{ cursor: "pointer" }} w="10vw" ml="1.2rem">
+            <Box w={{base:'30vw',sm:"20vw",md:'10vw'}} _hover={{ cursor: "pointer" }}  ml="1.2rem">
               <Image
                 src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
                 alt="playStore"

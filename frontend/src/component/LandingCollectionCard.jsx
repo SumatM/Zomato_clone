@@ -14,6 +14,7 @@ export const LandingCollectionCard = ({ img, title, places }) => {
         <Image
           position={"absolute"}
           h="350px"
+          w='100%'
           objectFit="cover"
           src={img}
           alt={title}
